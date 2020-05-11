@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div class="search-bar">
+        <input type="text" name="" class="search-txt" placeholder="search..." />
+        <a class="search-btn">
+            <i class="far fa-search"></i>
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+            <li class="item"><a href="upcoming.html">Upcoming Reminders</a></li>
+            <li class="item"><a href="index.html">Create Reminder</a></li>
+            <li class="item"><a href="Do Something">Calendar</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="container">
+
+
+            <div class="box two">
+                <h2>UPCOMING REMINDERS</h2>
+                <div>
+                    <p>randas dawd wj awd kj wdwakjd awkjd akjw k dakw jdkj wak jdwak djawk dkaw d d wakjakw jdawkj dakjw d</p>
+                </div>
+                <div>
+                    <p>randas dawd wj awd kj wdwakjd awkjd akjw k dakw jdkj wak jdwak djawk dkaw d d wakjakw jdawkj dakjw d</p>
+                </div>
+                <div>
+                    <p>randas dawd wj awd kj wdwakjd awkjd akjw k dakw jdkj wak jdwak djawk dkaw d d wakjakw jdawkj dakjw d</p>
+                </div>
+                <div>
+                    <p>randas dawd wj awd kj wdwakjd awkjd akjw k dakw jdkj wak jdwak djawk dkaw d d wakjakw jdawkj dakjw d</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

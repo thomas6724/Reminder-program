@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div class="search-bar">
+        <input type="text" name="" class="search-txt" placeholder="search..." />
+        <a class="search-btn">
+            <i class="far fa-search"></i>
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+            <li class="item"><a href="upcoming.html">Upcoming Reminders</a></li>
+            <li class="item"><a href="index.html">Create Reminder</a></li>
+            <li class="item"><a href="#">Calendar</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="box one">
+                <input type="text" placeholder="Reminder Name">
+                <p>Please select a date (Day/Month/Year)</p>
+                <div class="reminder-input">
+                    <select id="days" name="days">
+                        <option value="day">1</option>
+                        <option value="day">2</option>
+                        <option value="day">3</option>
+                        <option value="day">4</option>
+                        <option value="day">5</option>
+                        <option value="day">6</option>
+                        <option value="day">7</option>
+                        <option value="day">8</option>
+                    </select>
+                    <select id="days" name="days">
+                        <option value="day">1</option>
+                        <option value="day">2</option>
+                        <option value="day">3</option>
+                        <option value="day">4</option>
+                        <option value="day">5</option>
+                        <option value="day">6</option>
+                        <option value="day">7</option>
+                        <option value="day">8</option>
+                    </select>
+                    <select id="days" name="days">
+                        <option value="day">This Year</option>
+                        <option value="day">Next Year</option>
+                    </select>
+                    <select id="days" name="days">
+                        <option value="day">Repeat Never</option>
+                        <option value="day">Daily</option>
+                        <option value="day">Weekly</option>
+                        <option value="day">Fortnightly</option>
+                        <option value="day">Monthly</option>
+                        <option value="day">Anualy</option>
+                    </select>
+                    <div class="set-button">
+                        <a href="index.html">SET REMINDER</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
